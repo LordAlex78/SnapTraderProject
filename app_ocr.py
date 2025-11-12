@@ -1,4 +1,4 @@
- import streamlit as st
+import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -45,5 +45,6 @@ if uploaded_file is not None:
     # Download button
     csv = df.to_csv(index=False).encode("utf-8")
     st.download_button("Download Signals CSV", csv, "signals.csv", "text/csv")
+
 
 
